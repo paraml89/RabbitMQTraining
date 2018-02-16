@@ -1,0 +1,14 @@
+package com.capgemini.producer;
+
+import com.rabbitmq.client.ConnectionFactory;
+
+public class Sender {
+	
+	public static final String QUEUE_NAME="QUEUE_HELLO";
+	
+	public static void main(String[] args) {
+		
+		ConnectionFactory connectionFactory=new ConnectionFactory();
+	}
+
+}

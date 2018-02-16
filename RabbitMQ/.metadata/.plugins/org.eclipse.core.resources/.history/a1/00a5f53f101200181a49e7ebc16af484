@@ -1,0 +1,21 @@
+package com.capgemini.producer;
+
+import java.io.IOException;
+import java.util.concurrent.TimeoutException;
+
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+
+public class Sender {
+	
+	public static final String QUEUE_NAME="QUEUE_HELLO";
+	
+	public static void main(String[] args) throws IOException, TimeoutException {
+		
+		ConnectionFactory connectionFactory=new ConnectionFactory();
+		connectionFactory.setHost("localhost");
+		Connection connection=connectionFactory.newConnection();
+		
+	}
+
+}
